@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+#word-input {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+}
+
+#word-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#search-btn {
+    padding: 15px 25px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#search-btn:hover {
+    background: #0056b3;
+}
+
+.error {
+    background: #ff4444;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: none;
+}
+
+.error.show {
+    display: block;
+}
+
+.result {
+    display: none;
+   
+}
+
+.result.show {
+    display: block;
+}
+
+.word {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #333;
+    border-radius: 8px;
+}
+
+.word h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.word p {
+    color: #aaa;
+    font-size: 18px;
+}
+
+.details {
+    background: #333;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.part-of-speech {
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.meaning, .examples, .synonyms {
+    margin-bottom: 25px;
+}
+
+.meaning h4, .examples h4, .synonyms h4 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#definitions-list, #examples-list {
+    margin-left: 25px;
+    color: #ddd;
+}
+
+#definitions-list li, #examples-list li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#synonyms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#synonyms-list span {
+    background: #007bff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: white;
+} 
